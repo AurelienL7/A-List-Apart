@@ -1,0 +1,493 @@
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Global...............Globally-available variables and config.
+ *
+ * TOOLS
+ * Mixins...............Useful mixins.
+ *
+ * GENERIC
+ * Normalize.css........A level playing field.
+ * Box-sizing...........Better default `box-sizing`.
+ *
+ * BASE
+ * Headings.............H1–H6 styles.
+ *
+ * OBJECTS
+ * Wrappers.............Wrapping and constraining elements.
+ *
+ * COMPONENTS
+ * Page-head............The main page header.
+ * Page-foot............The main page footer.
+ * Buttons..............Button elements.
+ *
+ * TRUMPS
+ * Text.................Text helpers.
+ */
+
+
+
+/*------------------------------------*\
+  #SETTINGS
+\*------------------------------------*/
+
+/*------------------------------------*\
+  #TOOLS
+\*------------------------------------*/
+
+/*------------------------------------*\
+  #GENERIC
+\*------------------------------------*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    font-family: 'Libre Franklin', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*------------------------------------*\
+  #BASE
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
+  #OBJECTS
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
+  #COMPONENTS
+\*------------------------------------*/
+
+nav{
+    max-width: 100%;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.95);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    border-bottom: 1px solid #ddd;
+    font-weight: 600;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    margin-right: 24px;
+}
+
+nav ul li a{
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: none;
+    color: #222222;
+}
+
+nav ul li a:hover{
+    border-bottom: 1px solid black;
+}
+.search-bar{
+    height: 24px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 24px;
+}
+
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.big-articles{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.big-articles img{
+    max-width: 100%;
+}
+
+.big-articles .article-big{
+    margin-top: 50px;
+}
+
+.big-articles .article-big p:last-child{
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.site-tagline{
+    position: relative;
+    top: -41px;
+    z-index: -1;
+}
+
+
+.article-big-title{
+    text-decoration: none;
+    color: #222;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.article-big-title:hover{
+    border-bottom: 3px solid #222;
+}
+
+
+.date-big{
+    font-size: 18px;
+    color: #222;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    font-weight: 600;
+}
+
+.new-tag{
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #bb3825;
+    padding: 3px 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.article-big-author{
+    margin: 20px 0;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.article-big-author a{
+    font-size: 18px;
+    font-family: 'Libre Franklin', sans-serif;
+    color: #2455C3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.article-big-author .commentary{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
+.bubble{
+    font-size: 11px;
+    margin: 0 5px;
+}
+
+.sponsored{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+.sponsored a{
+    color: rgb(119, 119, 119);
+}
+
+hr{
+    margin: 90px 0 30px 0;
+    display: block;
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid #ccc;
+    padding: 0;
+}
+
+.newscast{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.newscast h2{
+    font-size: 36px;
+    margin-bottom: 36px;
+    margin: 0px auto 48px auto;
+}
+
+
+.articles-list-container{
+    text-align: left;
+    max-width: 730px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.article-small{
+    width: 33%;
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.title-small{
+    font-size: 18px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 600;
+    color: #222;
+    line-height: 30px;
+}
+
+.article-small a{
+    font-size: 14px;
+    font-family: 'Libre Franklin', sans-serif;
+    color: #2455C3;
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.article-small-content{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.category-small{
+    font-size: 12px;
+    color:  #666;
+    font-weight: 300;
+}
+
+.category-small a{
+    font-size: 12px;
+    color:  #666;
+    font-weight: 300;
+}
+
+.sidebar{
+    max-width: 216px;
+}
+
+.sidebar img{
+    max-height: 80px;
+}
+
+.bloc-info{
+    font-size: 12px;
+    font-weight: 400;
+    border: solid 1px #ddd;
+    border-radius: 3px;
+    box-shadow: inset 0 1px rgba(255,255,255,.3);
+    line-height: 20px;
+    margin: 0 auto 36px;
+    padding: 12px;
+    text-align: center;
+}
+
+.book-apart{
+    background-color: #F0F0F0;
+}
+
+.footer-info{
+    background: #f0f0f0;
+    border-radius: 6px;
+    font-size: 12px;
+    line-height: 24px;
+    margin-top: 50px;
+    margin-bottom: 24px;
+    padding: 18px 86px;
+}
+
+.footer-info a{
+    text-decoration: none;
+    color: #2455c3;
+}
+
+.footer-info a:hover{
+    text-decoration: underline;
+}
+
+.footer{
+    background-color: #f0f0f0;
+    background: url(img/noise.png) center 102%,#ededed;
+}
+
+.footer-primary-nav{
+    width: 100%;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.footer-primary-nav a{
+    font-size: 14px;
+    color: #222;
+    font-weight: 600;
+    text-decoration: none;
+    margin-right: 24px;
+}
+
+.footer-primary-nav a:hover{
+    text-decoration: underline;
+}
+
+.footer-primary-nav ul li{
+    display: inline;
+}
+
+.socials-links a{
+    margin: 0;
+}
+
+
+.footer-promos-container{
+    background: url(img/noise.png) center 102%,rgba(255,255,255,.5);
+}
+
+.footer-promos-container .container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-promos-container img{
+    float: left;
+    margin-right: 12px;
+}
+
+.footer-promos-container a{
+    text-decoration: none;
+    color: #222;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.footer-promos-container h6{
+    font-weight: 600;
+}
+
+.promo-article{
+    width: 45%;
+    padding: 24px 0;
+}
+
+.promo-link{
+    color: #2455C3;
+    font-weight: 600;
+}
+
+.clear{
+    clear: both;
+}
+
+.promo-article:hover{
+    background-color: rgba(255,255,255,.5);
+}
+
+.footer-sub-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 68px;
+    padding-bottom: 24px;
+    font-size: 14px;
+}
+
+.footer-sub-nav p{
+    margin-bottom: 12px;
+}
+
+.footer-sub-nav a{
+    color: #222;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-sub-nav a:hover{
+    text-decoration: underline;
+}
+
+.footer-sub-nav ul li{
+    display: inline;
+}
+
+
+.footer-sub-nav-logos img{
+    width: 60px;
+}
+
+.footer-big-title{
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.footer-big-title img{
+    width: 100%;
+    position: relative;
+    top: 8px;
+}
+
+/*------------------------------------*\
+  #TRUMPS
+\*------------------------------------*/
