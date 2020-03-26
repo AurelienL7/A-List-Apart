@@ -286,12 +286,16 @@ hr{
     line-height: 24px;
 }
 
-.title-small{
+.article-small .title-small{
     font-size: 18px;
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 600;
     color: #222;
     line-height: 30px;
+}
+
+.article-small .title-small:hover{
+    text-decoration: underline;
 }
 
 .article-small a{
